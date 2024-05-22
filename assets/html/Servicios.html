@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./../Images/icons/favicon_io/favicon.ico">
+  <link href="./../styles/productos.css" rel="stylesheet">
+  <link href="./../styles/bootstrap.css" rel="stylesheet" />
+
+  <title>SERVICIOS</title>
+</head>
+
+<body>
+  <div class="container-flex">
+    <header>
+      <!-- Este es solo para hacer manejable la página -->
+      <!-- Se debe sustitur por el que se usa en el proyecto -->
+      <div class="header-site">
+        <div class="logo">
+          <div class="logotipo">
+            <a href="./../../index.html" id="Home">
+              <img src="./../Images/icons/Sur-Solar.ico" alt="SurSolar">
+            </a>
+          </div>
+          <!-- inicio sitio en el mapa con enlaces-->
+          <div class="breadcrumbs">
+            <a href="./../../../index.html#presentacion">Home</a> &gt; Servicios
+          </div>
+          <!-- fin sitio en el mapa con enlaces-->
+        </div>
+        <div class="header-top">
+          <!-- BEGIN TOP NAVIGATION -->
+          <div class="menutop-container">
+          </div>
+          <div class="menunav-container">
+          </div>
+          <!-- END TOP NAVIGATION -->
+        </div>
+        <div class="login">
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="wrapper">
+        <div class="container-flex" id="izquierda">
+          <span style="font-size:2rem;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+          <div id="SideNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Volver &times;</a>
+            <div class="overlay-content">
+              <div class="TopNav">
+                <a href="./Productos.html" target="" class="products">Productos</a>
+                <a href="./../../index.html#Productos" target="" class="products">Servicios</a>
+                <ul class="SubPro">
+                  <li> <a href="./../html/en-construccion.html" target="_self">Instalaciones</a></li>
+                  <li> <a href="./../html/en-construccion.html" target="_self">Mantenimiento</a></li>
+                  <li> <a href="./../html/en-construccion.html" target="_self">Repuestos</a></li>
+                  <li> <a href="./../html/en-construccion.html" target="_self">Ventas</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="carouselServicios" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselServicios" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselServicios" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselServicios" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselServicios" data-bs-slide-to="3"
+              aria-label="Slide 4"></button>
+            <!-- 
+            <button type="button" data-bs-target="#carouselServicios" data-bs-slide-to="4"
+              aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselServicios" data-bs-slide-to="5"
+              aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselServicios" data-bs-slide-to="6"
+              aria-label="Slide 7"></button>
+            <button type="button" data-bs-target="#carouselServicios" data-bs-slide-to="7"
+              aria-label="Slide 8"></button>
+            <button type="button" data-bs-target="#carouselServicios" data-bs-slide-to="8"
+              aria-label="Slide 9"></button>
+            <button type="button" data-bs-target="#carouselServicios" data-bs-slide-to="9"
+              aria-label="Slide 10"></button>
+            <button type="button" data-bs-target="#carouselServicios" data-bs-slide-to="10"
+              aria-label="Slide 11"></button>
+            <button type="button" data-bs-target="#carouselServicios" data-bs-slide-to="11"
+              aria-label="Slide 12"></button>
+            -->
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="./../html/en-construccion.html">
+                <img src="./../Images/Carousel/instalaciones.webp" class="d-block w-100" title="Instalaciones"
+                  alt="Servicios de Instalación">
+              </a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>INSTALACIONES</h5>
+                <p>Haga click sobre la imagen para ir a la Sección de Instalaciones.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <a href="./../html/en-construccion.html">
+                <img src="./../Images/Carousel/Servicios.webp" class="d-block w-100" alt="Mantenimiento" title="Mantenimiento">
+              </a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>MANTENIMIENTO</h5>
+                <p>Haga click sobre la imagen para ir a la Sección de Mantenimiento.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <a href="./../html/en-construccion.html">
+                <img src="./../Images/Carousel/repuestos.webp" class="d-block w-100"
+                  alt="Repuestos" title="Repuestos">
+              </a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>REPUESTOS</h5>
+                <p>Haga click sobre la imagen para ir a la Sección de Repuestos.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <a href="./../html/en-construccion.html">
+                <img src="./../Images/Carousel/ventas.webp" class="d-block w-100" alt="Ventas"
+                  title="Estaciones de Carga">
+              </a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>VENTAS</h5>
+                <p>Haga click sobre la imagen para ir a la Sección de Ventas.</p>
+              </div>
+            </div>
+            <!-- 
+            <div class="carousel-item">
+              <a href="./modulos/inversores.html">
+                <img src="./../Images/Carousel/Inversores.webp" class="d-block w-100" alt="Inversor" title="Inversor">
+              </a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>INVERSORES</h5>
+                <p>Haga click sobre la imagen para ir a la Sección de Inversores.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <a href="./modulos/kits.html">
+                <img src="./../Images/Carousel/kits.webp" class="d-block w-100" alt="Equipos Solares"
+                  title="Equipos Solares">
+              </a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>EQUIPOS SOLARES</h5>
+                <p>Haga click sobre la imagen para ir a la Sección de Equipos Solares.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <a href="./modulos/lamparas.html">
+                <img src="./../Images/Carousel/lamparas.webp" class="d-block w-100" alt="Lámparas Solares"
+                  title="Lámparas Solares">
+              </a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>LAMPARAS SOLARES</h5>
+                <p>Haga click sobre la imagen para ir a la Sección de Lámparas Solares.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <a href="./modulos/paneles-solares.html">
+                <img src="./../Images/Carousel/paneles.webp" class="d-block w-100" alt="Panel Solar"
+                  title="Paneles Solares">
+              </a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>PANELES SOLARES FOTOVOLTAICOS</h5>
+                <p>Haga click sobre la imagen para ir a la Sección de Paneles Solares.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <a href="./modulos/paneles-solares.html">
+                <img src="./../Images/Carousel/paneles-termodinamicos.webp" class="d-block w-100" alt="Panel Solar"
+                  title="Paneles Solares Termodinamicos">
+              </a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>PANELES SOLARES TERMODINAMICOS</h5>
+                <p>Haga click sobre la imagen para ir a la Sección de Paneles Solares.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <a href="./modulos/reflectores.html">
+                <img src="./../Images/Carousel/reflectores.webp" class="d-block w-100" alt="Reflector Solar"
+                  Title="Reflectores Solares">
+              </a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>REFLECTORES SOLARES</h5>
+                <p>Haga click sobre la imagen para ir a la Sección de Lámparas Solares.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <a href="./modulos/techos-solares.html">
+                <img src="./../Images/Carousel/Solar-Roof.webp" class="d-block w-100" alt="Techos Solares"
+                  title="Techos Solares">
+              </a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>TECHOS SOLARES</h5>
+                <p>Haga click sobre la imagen para ir a la Sección de Techos Solares.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <a href="./modulos/turbinas-eolicas.html">
+                <img src="./../Images/Carousel/wind-turbine-for-home.webp" class="d-block w-100" alt="Turbinas Eólicas"
+                  title="Turbinas Eólicas">
+              </a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>TURBINAS EOLICAS</h5>
+                <p>Haga click sobre la imagen para ir a la Sección de Turbinas Eólicas.</p>
+              </div>
+            </div>
+            -->
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselServicios" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselServicios" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div id="derecha"></div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-nav-container">
+        <div class="copyright">
+          © 2024 SurSolar. All rights reserved.
+        </div>
+        <div class="footer-nav">
+          <ul class="footer-navlinks">
+            <li><a href="./../../../index.html#presentacion" class="pres">Home</a></li>
+            <li><a href="./../../../index.html#nosotros" class="noso">Nosotros</a></li>
+            <li><a href="./../../../index.html#Productos" class="prod">Productos y Servicios</a></li>
+            <li><a href="./../../../index.html#marcas" class="marc">Marcas</a></li>
+            <li><a href="./../../../index.html#contacto" class="cont">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="./../scripts/bootstrap.js"></script>
+  <script src="./../scripts/sidenav.js"></script>
+</body>
+
+</html>

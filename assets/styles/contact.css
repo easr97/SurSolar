@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+#contacto .form-cont {
+  display: inline-flex;
+  position: absolute;
+  z-index: 3;
+  height: 85%;
+  width: 85%;
+  align-items: center;
+  justify-content: center;
+  margin: 5%;
+}
+
+#contacto .form-cont .libre {
+  display: flexbox;
+  height: 100%;
+  width: 50%;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
+
+#contacto .form-cont .libre>form .radios {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  color: black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  background-color: transparent;
+  transition: all 0.3s;
+}
+
+#contacto .form-cont .libre>form .areas {
+  color: black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  background-color: transparent;
+  transition: all 0.3s;
+}
+
+#contacto .form-cont .forma {
+  display: flexbox;
+  height: 100%;
+  width: 50%;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  text-align: center;
+  color: black;
+}
+
+#contacto .form-cont .forma form {
+  margin-top: 10%;
+}
+
+#contacto .form-cont .forma .input-box {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+#contacto .form-cont .forma .input-box .input-field{
+  width: 48.55%;
+}
+
+.field .item {
+  width: 100%;
+  background: transparent;
+  outline: none;
+}
+
+.field .item::placeholder {
+  color: rgba(255,255,255,.3);
+}
+
+form .textarea-field .item{
+  resize: none;
+}
+
+#contacto .form-cont .libre .feedback-input {
+  border: solid #CC6666;
+  color: black;
+}
+
+
+.feedback-input {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  background-color: transparent;
+  transition: all 0.3s;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background: #CC6666;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s;
+  font-weight: 700;
+}
+
+[type="submit"]:hover {
+  background: #CC4949;
+}
+
+@media screen and (min-width: 1152px) {
+  form {
+    max-width: 26.25em;
+    margin: 3.125em auto;
+  }
+
+  #contacto .form-cont .libre {
+    font-size: 1.125em;
+  }
+
+  #contacto .form-cont .libre>form .radios {
+    font-size: 1.125em;
+    border-radius: 5px;
+    line-height: 0.625em;
+    border: .125em solid #CC6666;
+  }
+
+  #contacto .form-cont .libre>form .areas {
+    font-size: 1.125em;
+    padding: 0.625em;
+    border-radius: 5px;
+    line-height: 22px;
+    border: .125em solid #CC6666;
+  }
+
+  #contacto .form-cont .forma {
+    font-size: 1.125em;
+  }
+
+  .feedback-input {
+    font-size: 1.125em;
+    border-radius: .3125em;
+    line-height: 1.375em;
+    border: .125em;
+    padding: .8125em;
+    margin-bottom: .9375em;
+  }
+
+  .field .item {
+    padding: 1.125em;
+    border: .125em solid #CC6666;
+    border-radius: .375em;
+    font-size: 1em;
+    margin: .75em 0;
+  }
+
+  .feedback-input:focus {
+    border: .125em solid #CC4949;
+  }
+
+  textarea {
+    height: 2.4em;
+    line-height: 150%;
+  }
+
+  [type="submit"] {
+    border-radius: .3125em;
+    font-size: 1.5em;
+    padding-top: .625em;
+    padding-bottom: .625em;
+    margin-top: -.25em;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  form {
+    max-width: 17.0625em;
+    margin: 2.03125em auto;
+  }
+
+  #contacto .form-cont .libre {
+    font-size: .73125em;
+  }
+
+  #contacto .form-cont .libre>form .radios {
+    font-size: .73125em;
+    border-radius: 0.203125em;
+    border: .08125em solid #CC6666;
+    line-height: 0.40625em;
+  }
+
+  #contacto .form-cont .libre>form .areas {
+    font-size: .73125em;
+    border-radius: .203125em;
+    border: .08125em solid #CC6666;
+    line-height: 1.375em;
+    padding: 0.40625em;
+  }
+
+  #contacto .form-cont .forma {
+    font-size: .73125em;
+  }
+
+  .feedback-input {
+    font-size: .73125em;
+    border-radius: .203125em;
+    line-height: .89375em;
+    border: .08125em solid #CC6666;
+    padding: .528125em;
+    margin-bottom: .609375em;
+  }
+
+  .field .item {
+    padding: .73125em;
+    border: .08125 solid #CC6666;
+    border-radius: .24375em;
+    font-size: .65em;
+    margin: .4875em 0;
+  }
+
+  textarea {
+    height: 1.56em;
+    line-height: 97.5%;
+  }
+
+  [type="submit"] {
+    border-radius: .203125em;
+    font-size: .975em;
+    padding-top: .40625em;
+    padding-bottom: .40625em;
+    margin-top: -.1625em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  form {
+    max-width: 11.8125em;
+    margin: 1.40625em auto;
+  }
+
+  #contacto .form-cont .libre {
+    font-size: .50625em;
+  }
+
+  #contacto .form-cont .libre>form .radios {
+    font-size: .675em;
+    border-radius: 0.140625em;
+    line-height: 0.28125em;
+    border: .05625em solid #CC6666;
+  }
+
+  #contacto .form-cont .libre>form .areas {
+    font-size: .675em;
+    border-radius: 0.140625em;
+    ;
+    line-height: .61875em;
+    border: .05625em solid #CC6666;
+    padding: 0.28125em;
+  }
+
+  #contacto .form-cont .forma {
+    font-size: .50625em;
+  }
+
+  .feedback-input {
+    font-size: .5025em;
+    border-radius: .140625em;
+    line-height: .61875em;
+    border: .05625em solid #CC6666;
+    padding: .365625em;
+    margin-bottom: .421875em;
+  }
+
+
+  .field .item {
+    padding: .50625em;
+    border: .05625 solid #CC6666;
+    border-radius: .16875em;
+    font-size: .45em;
+    margin: .2025em 0;
+  }
+
+  .feedback-input:focus {
+    border: .05625em solid #CC4949;
+  }
+
+  textarea {
+    height: 1.08em;
+    line-height: 67.5%;
+  }
+
+  [type="submit"] {
+    border-radius: .140625em;
+    font-size: .675em;
+    padding-top: .28125em;
+    padding-bottom: .28125em;
+    margin-top: -.1125em;
+  }
+}

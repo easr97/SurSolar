@@ -1,0 +1,530 @@
+/* Para las formas de contacto */
+@import url(./contact.css);
+
+/* Font Awesome  https://fontawesome.com/v4/icons/ */
+/* Es importante usar esta versón y sus íconos porque las versiones posteriores son pagas */
+@import url(./../Components/font-awesome/css/font-awesome.css);
+
+
+body,
+html {
+  height: 100%;
+}
+
+#presentacion {
+  background: linear-gradient(225deg, #ffc27d, #ff8e93);
+}
+
+#nosotros {
+  background: linear-gradient(#f3defc, #63a3e6);
+}
+
+#Productos {
+  background: linear-gradient(#d2fcad, #22eaeb);
+}
+
+#Servicios {
+  background: linear-gradient(#f0bed4, #a163f5);
+}
+
+#contacto {
+  background: linear-gradient(#65cce1, #6365ec);
+}
+
+
+.slider__container {
+  position: fixed;
+  display: block;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  -o-transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+}
+
+.slider__page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+
+section .diapositiva {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+section .flomen {
+  display: inline-flex;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+}
+
+section .flomen1 {
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  /* float: right; */
+}
+
+.naveg {
+  display: inline-flex;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+}
+
+.mvyv {
+  display: flex;
+  flex-direction: column;
+  z-index: 4;
+  height: 85%;
+  width: 85%;
+  align-items: center;
+  justify-content: center;
+  margin: 5%;
+  background-color: transparent;
+  left: 10%;
+  color: yellow;
+}
+
+.mvyv span {
+  font-weight: bold;
+}
+
+.mvyv p {
+  text-align: justify;
+  padding-left: 5%;
+}
+
+.mvyv p:hover {
+  background-color: black;
+}
+
+#addendum p{
+  text-align: justify;
+  padding-left: 5%;
+}
+
+.nav-menu li {
+  display: inline-flex;
+}
+
+.ensal-menu {
+  display: inline-flex;
+}
+
+.ensal-menu li {
+  display: inline-flex;
+}
+
+.nav-menu li a {
+  color: black;
+  text-decoration: none;
+}
+
+.nav-menu li a:hover {
+  color: #cc0000;
+}
+
+.ensal-menu li a {
+  color: black;
+  text-decoration: none;
+}
+
+.ensal-menu li a:hover {
+  color: #cc0000;
+}
+
+section .diapositiva>span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5vw;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+section .diapositiva>video {
+  width: 100%;
+  height: 100%;
+}
+
+section .diapositiva .demarcas {
+  display: flex;
+  position: absolute;
+  top: 8vh;
+  left: 8vh;
+  width: 85vw;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+body.slider__body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#nav-checkbox:Checked~.nav-menu {
+  background: #cc0000;
+  margin-top: 0.625em;
+  padding: 0.625em 0;
+  border-top: 1px solid #fff;
+}
+
+#nav-checkbox:checked~ul.nav-menu li {
+  display: block;
+}
+
+
+.slider__indicators {
+  position: fixed;
+  top: 50%;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.slider__indicator {
+  display: block;
+  background-color: #fff;
+  cursor: default;
+}
+
+.slider__indicator--active {
+  opacity: 0.3;
+}
+
+#pie {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000;
+  align-items: end;
+}
+
+.cartelera {
+  display: flex;
+  height: 85%;
+  width: 100%;
+  background-color: transparent;
+  z-index: 3;
+  top: 5%;
+  position: absolute;
+}
+
+.carteles {
+  display: flex;
+  flex-direction: column;
+  width: 33.333%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.carteles .leyenda {
+  width: 100%;
+  height: 20%;
+  align-content: center;
+  top: 0;
+  position: absolute;
+}
+
+.carteles .leyenda h3 {
+  color: white;
+  text-align: center;
+}
+
+.carteles #mapa {
+  display: flex;
+  width: 100%;
+  height: 80%;
+  justify-content: center;
+  align-items: center;
+}
+
+.carteles .parches {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 80%;
+}
+
+.carteles .parches .parche {
+  display: flex;
+  width: 100%;
+  height: 33.333%;
+  justify-content: center;
+  align-items: center;
+}
+
+.carteles iframe {
+  width: 100%;
+  height: 80%;
+}
+
+#addendum p {
+  color: white;
+  padding: 10%;
+}
+
+.footer-nav-container {
+  display: flex;
+  flex-direction: row;
+
+  height: 10vh;
+  width: 100vw;
+  background-color: #073bb3;
+  bottom: 0;
+  z-index: 3;
+}
+
+.copyright {
+  width: 30vw;
+  font-weight: bold;
+  text-align: center;
+  color: yellow;
+  float: left;
+  margin: auto;
+}
+
+.footer-nav {
+  width: 70vw;
+  margin: auto;
+}
+
+.footer-navlinks {
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-navlinks>li {
+  display: inline;
+  max-width: 7.5em;
+  float: right;
+  color: #ffffff;
+}
+
+.footer-navlinks a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-navlinks a:hover {
+  text-decoration: underline;
+  color: yellow;
+}
+
+@media screen and (min-width: 1152px) {
+  .mvyv p {
+    font-size: 1.5em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+  }
+
+  .mvyv h2 {
+    font-size: 2em;
+    padding: 0 1em;
+  }
+
+  .nav-menu li a {
+    font-size: 1.5em;
+    padding: 0 1em;
+  }
+
+  .ensal-menu {
+    padding-left: 6em;
+  }
+
+  .ensal-menu li a {
+    font-size: 1.5em;
+    padding: 0 1em;
+  }
+
+  .slider__indicator {
+    width: 0.625em;
+    height: 0.625em;
+    margin: 0.625em 0;
+    border-radius: 6.25em;
+    left: 1.125em;
+  }
+
+  .carteles .leyenda h3 {
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+  }
+
+  #addendum p {
+    font-size: 1em;
+  }
+
+  .copyright {
+    font-size: 1em;
+  }
+
+  .footer-navlinks>li {
+    font-size: 1.3em;
+    padding-right: 2.8125em;
+    line-height: 1.4em;
+    margin: 0.3125em 0px;
+  }
+
+  .footer-navlinks a {
+    font-size: 1.3em;
+    padding: 0 0.3125em;
+  }
+
+}
+
+@media screen and (max-width: 1024px) {
+  .mvyv p {
+    font-size: .975em;
+    margin-block-start: .65em;
+    margin-block-end: .65em;
+  }
+
+  .mvyv h2 {
+    font-size: 1.3em;
+    padding: 0 1em;
+  }
+
+  .nav-menu li a {
+    font-size: .975em;
+    padding: 0 .65em;
+  }
+
+  .ensal-menu {
+    padding-left: 3.9em;
+  }
+
+  .ensal-menu li a {
+    font-size: .975em;
+    padding: 0 .65em;
+  }
+
+  .slider__indicator {
+    width: 0.40625em;
+    height: 0.40625em;
+    margin: 0.40625em 0;
+    border-radius: 4.0625em;
+    left: .73125em;
+  }
+
+  .carteles .leyenda h3 {
+    font-size: .7605em;
+    margin-block-start: .65em;
+    margin-block-end: .65em;
+  }
+
+  #addendum p {
+    font-size: .65em;
+  }
+
+  .copyright {
+    font-size: .65em;
+  }
+
+  .footer-navlinks>li {
+    font-size: 0.845em;
+    padding-right: 1.828125em;
+    line-height: 1em;
+    margin: 0.203125em 0px;
+  }
+
+  .footer-navlinks a {
+    font-size: .845em;
+    padding: 0 .203125em;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .mvyv p {
+    font-size: .675em;
+    margin-block-start: .45em;
+    margin-block-end: .45em;
+  }
+
+  .mvyv h2 {
+    font-size: .9em;
+    padding: 0 1em;
+  }
+
+  .nav-menu li a {
+    font-size: .675em;
+    padding: 0 .45em;
+  }
+
+  .ensal-menu {
+    padding-left: 2.7em;
+  }
+
+  .ensal-menu li a {
+    font-size: .675em;
+    padding: 0 .45em;
+  }
+
+  .slider__indicator {
+    width: .28125;
+    height: .28125;
+    margin: .28125 0;
+    border-radius: 2.8125em;
+    left: .50625em;
+  }
+
+  .carteles .leyenda h3 {
+    font-size: .5265em;
+    margin-block-start: .45em;
+    margin-block-end: .45em;
+  }
+
+  #addendum p {
+    font-size: .45em;
+  }
+
+  .copyright {
+    font-size: .45em;
+  }
+
+  .footer-navlinks>li {
+    font-size: 0.585em;
+    padding-right: 1.265625em;
+    line-height: 1em;
+    margin: 0.140625em 0px;
+  }
+
+  .footer-navlinks a {
+    font-size: .585em;
+    padding: 0 .140625em;
+  }
+
+}

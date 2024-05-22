@@ -1,0 +1,366 @@
+@charset "utf-8";
+
+root {
+	font-size: 16px;
+	overflow: hidden;
+}
+
+body {
+	font-size: 100%;
+}
+
+.header-site {
+	display: flex;
+	width: 100%;
+	height: 10vh;
+	background-repeat: repeat-x;
+	background-color: #fff;
+	margin: 0;
+	float: left
+}
+
+.logo {
+	max-width: 40%;
+	max-height: 100%;
+	display: inline-flex;
+	align-items: end;
+	justify-content: end;
+}
+
+.logo>logotipo {
+	display: flex;
+	max-width: auto;
+	max-height: 100%;
+}
+
+.logo img {
+	float: left;
+	height: 80%;
+	max-height: 10vh;
+	object-fit: contain;
+}
+
+.breadcrumbs {
+	height: 20%;
+	color: #000000;
+	font-weight: normal;
+	float: left;
+	padding-left: 2vw;
+	padding-bottom: 10%;
+}
+
+.header-top {
+	width: 40%;
+	height: 100%
+}
+
+.menutop-container {
+	width: 100%;
+	height: 50%
+}
+
+.menunav-container {
+	width: 100%;
+	height: 50%
+}
+
+.login {
+	width: 20%;
+	height: 100%;
+	text-align: right;
+	float: right;
+	color: #fff;
+	line-height: 22px;
+	text-shadow: 1px 1px 3px #4a4a4a
+}
+
+.login a {
+	color: #fff;
+	text-decoration: none
+}
+
+.login a:hover {
+	color: #d1d2d2;
+	text-decoration: none
+}
+
+.wrapper {
+	display: flex;
+	margin-top: 3%;
+	height: 77%;
+	width: 100%
+}
+
+#izquierda {
+	width: 18%
+}
+
+
+.overlay {
+	max-height: 80%;
+	width: 0;
+	position: fixed;
+	/* z-index: 1; */
+	top: 10vh;
+	left: 0;
+	background-color: rgb(49, 49, 170);
+	overflow: hidden;
+	transition: 0.5s;
+}
+
+.overlay-content {
+	max-width: 100%;
+	max-height: 100%;
+	padding-top: 20%;
+}
+
+.overlay .closebtn {
+	float: right;
+}
+
+.overlay a {
+	padding: 8px;
+	text-decoration: none;
+	color: black;
+	display: block;
+	transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+	color: #f1f1f1;
+}
+
+.TopNav .products {
+	/* color: black; */
+	font-weight: bold;
+}
+
+.TopNav .products:hover {
+	color: white
+}
+
+
+
+.TopNav li {
+	float: none;
+}
+
+.TopNav li a:hover {
+	background-color: #111
+}
+
+.SubPro a {
+	color: rgb(197, 197, 24);
+}
+
+#carouselProductos {
+	width: 80%;
+	height: 100%
+}
+
+#carouselServicios {
+	width: 80%;
+	height: 100%
+}
+
+#derecha {
+	width: 2%
+}
+
+.container-Flex {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	width: 100vw
+}
+
+.footer-navlinks {
+	padding-right: 5%;
+	float: right
+}
+
+.footer-title {
+	height: 2vh;
+	font-weight: 700;
+	color: #f8f8e5;
+	margin-bottom: 1vh
+}
+
+.footer-container {
+	width: 100%;
+	background-color: #000;
+	padding-bottom: 15px;
+	clear: both
+}
+
+.footer-nav-container {
+	display: flex;
+	flex-direction: row;
+
+	height: 10vh;
+	width: 100vw;
+	background-color: #073bb3;
+	bottom: 0;
+	z-index: 3;
+}
+
+.copyright {
+	width: 30%;
+	font-weight: bold;
+	text-align: center;
+	color: yellow;
+	float: left;
+	margin: auto;
+}
+
+.footer-nav {
+	width: 70%;
+	margin: auto;
+}
+
+.footer-navlinks {
+	color: #ffffff;
+	display: inline;
+}
+
+.footer-navlinks>li {
+	display: inline;
+	line-height: 1em;
+}
+
+.footer-navlinks li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.footer-navlinks a:hover {
+	text-decoration: underline;
+	color: yellow;
+}
+
+@media screen and (min-width: 1152px) {
+	.login {
+		font-size: 1.5em;
+	}
+
+	.login a:hover {
+		font-size: 1.5em;
+	}
+
+	.breadcrumbs {
+		font-size: 1.5em;
+	}
+
+	.overlay .closebtn {
+		font-size: 2em;
+		top: 2vh;
+	}
+
+	.TopNav .products {
+		font-size: 1.5em;
+	}
+
+	.SubPro a {
+		font-size: 1em;
+	}
+
+	.copyright {
+		font-size: 1em;
+	}
+
+	.footer-title {
+		font-size: 1em;
+	}
+
+	.footer-navlinks li a {
+		font-size: 1.4em;
+		padding-right: 2.8125em;
+		max-width: 7.5em;
+	}
+
+}
+
+@media screen and (max-width: 1024px) {
+	.login {
+		font-size: .975em;
+	}
+
+	.login a:hover {
+		font-size: .975em;
+	}
+
+	.breadcrumbs {
+		font-size: .975em;
+	}
+
+	.overlay .closebtn {
+		font-size: 1.3em;
+		top: 1.3vh;
+	}
+
+	.TopNav .products {
+		font-size: .975em;
+	}
+
+	.SubPro a {
+		font-size: .65em;
+	}
+
+	.copyright {
+		font-size: 0.65em;
+	}
+
+	.footer-title {
+		font-size: .65em;
+	}
+
+	.footer-navlinks li a {
+		font-size: .91em;
+		padding-right: 1.828125em;
+		max-width: 4.875em;
+	}
+
+}
+
+@media screen and (max-width: 600px) {
+	.login {
+		font-size: .675em;
+	}
+
+	.login a:hover {
+		font-size: .675em;
+	}
+
+	.breadcrumbs {
+		font-size: .675em;
+	}
+
+	.overlay .closebtn {
+		font-size: .9em;
+		top: .9vh;
+	}
+
+	.TopNav .products {
+		font-size: .675em;
+	}
+
+	.SubPro a {
+		font-size: .45em;
+	}
+
+	.copyright {
+		font-size: 0.45em;
+	}
+
+	.footer-title {
+		font-size: .45em;
+	}
+
+	.footer-navlinks li a {
+		font-size: .63em;
+		padding-right: 1.265625em;
+		max-width: 3.375em;
+	}
+
+}
