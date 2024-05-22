@@ -100,6 +100,7 @@ section .flomen1 {
   background-color: transparent;
   left: 10%;
   color: yellow;
+  margin-top: 5%;
 }
 
 .mvyv span {
@@ -116,7 +117,7 @@ section .flomen1 {
   background-color: black;
 }
 
-#addendum p{
+#addendum p {
   text-align: justify;
   padding-left: 5%;
 }
@@ -178,6 +179,10 @@ section .diapositiva .demarcas {
   justify-content: center;
 }
 
+section .diapositiva .demarcas img {
+  height: 100%;
+  width: 100%;
+}
 
 .flex-container {
   display: flex;
