@@ -70,56 +70,11 @@ section .flomen {
   z-index: 2;
   position: absolute;
   top: 0;
-}
-
-section .flomen1 {
-  display: flex;
-  flex-direction: column;
-  z-index: 2;
-  position: absolute;
-  top: 0;
+  padding: 20%;
   /* float: right; */
 }
 
-.naveg {
-  display: inline-flex;
-  z-index: 2;
-  position: absolute;
-  top: 0;
-}
 
-.mvyv {
-  display: flex;
-  flex-direction: column;
-  z-index: 4;
-  height: 85%;
-  width: 85%;
-  align-items: center;
-  justify-content: center;
-  right: 5%;
-  background-color: transparent;
-  left: 10%;
-  color: yellow;
-}
-
-.mvyv span {
-  font-weight: bold;
-}
-
-.mvyv p {
-  text-align: justify;
-  padding-left: 5%;
-  padding-right: 5%;
-}
-
-.mvyv p:hover {
-  background-color: black;
-}
-
-#addendum p{
-  text-align: justify;
-  padding-left: 5%;
-}
 
 .nav-menu li {
   display: inline-flex;
@@ -176,6 +131,7 @@ section .diapositiva .demarcas {
   height: auto;
   align-items: center;
   justify-content: center;
+  /* z-index: 3; */
 }
 
 
@@ -202,22 +158,7 @@ body.slider__body {
 }
 
 
-.slider__indicators {
-  position: fixed;
-  top: 50%;
-  z-index: 2;
-  margin: 0;
-  padding: 0;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
 
-.slider__indicator {
-  display: block;
-  background-color: #fff;
-  cursor: default;
-}
 
 .slider__indicator--active {
   opacity: 0.3;
@@ -235,6 +176,7 @@ body.slider__body {
   display: flex;
   height: 85%;
   width: 100%;
+  /* background-color: rgba(34, 34, 150, 0.404); */
   background-color: transparent;
   z-index: 3;
   top: 5%;
@@ -296,6 +238,7 @@ body.slider__body {
   padding: 10%;
 }
 
+
 .footer-nav-container {
   display: flex;
   flex-direction: row;
@@ -345,16 +288,11 @@ body.slider__body {
 
 @media screen and (min-width: 1152px) {
   .mvyv p {
-    font-size: 1.5em;
+    font-size: 1.17em;
     margin-block-start: 1em;
     margin-block-end: 1em;
   }
-
-  .mvyv h2 {
-    font-size: 2em;
-    padding: 0 1em;
-  }
-
+  
   .nav-menu li a {
     font-size: 1.5em;
     padding: 0 1em;
@@ -374,7 +312,6 @@ body.slider__body {
     height: 0.625em;
     margin: 0.625em 0;
     border-radius: 6.25em;
-    left: 1.125em;
   }
 
   .carteles .leyenda h3 {
@@ -382,6 +319,7 @@ body.slider__body {
     margin-block-start: 1em;
     margin-block-end: 1em;
   }
+  
 
   #addendum p {
     font-size: 1em;
@@ -407,15 +345,11 @@ body.slider__body {
 
 @media screen and (max-width: 1024px) {
   .mvyv p {
-    font-size: .975em;
+    font-size: .7605em;
     margin-block-start: .65em;
     margin-block-end: .65em;
   }
-
-  .mvyv h2 {
-    font-size: 1.3em;
-    padding: 0 1em;
-  }
+  
 
   .nav-menu li a {
     font-size: .975em;
@@ -436,7 +370,6 @@ body.slider__body {
     height: 0.40625em;
     margin: 0.40625em 0;
     border-radius: 4.0625em;
-    left: .73125em;
   }
 
   .carteles .leyenda h3 {
@@ -468,18 +401,12 @@ body.slider__body {
 }
 
 @media screen and (max-width: 600px) {
-
   .mvyv p {
-    font-size: .675em;
+    font-size: .5265em;
     margin-block-start: .45em;
     margin-block-end: .45em;
   }
-
-  .mvyv h2 {
-    font-size: .9em;
-    padding: 0 1em;
-  }
-
+  
   .nav-menu li a {
     font-size: .675em;
     padding: 0 .45em;
@@ -499,7 +426,6 @@ body.slider__body {
     height: .28125;
     margin: .28125 0;
     border-radius: 2.8125em;
-    left: .50625em;
   }
 
   .carteles .leyenda h3 {
