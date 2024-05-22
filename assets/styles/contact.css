@@ -111,7 +111,7 @@ textarea {
   background: #CC4949;
 }
 
-@media screen and (min-width: 1152px) {
+@media screen and (min-width: 1600px) {
   form {
     max-width: 26.25em;
     margin: 3.125em auto;
@@ -175,7 +175,7 @@ textarea {
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1440px) {
   form {
     max-width: 17.0625em;
     margin: 2.03125em auto;
@@ -235,7 +235,7 @@ textarea {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   form {
     max-width: 11.8125em;
     margin: 1.40625em auto;

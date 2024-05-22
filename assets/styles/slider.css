@@ -347,7 +347,7 @@ body.slider__body {
   color: yellow;
 }
 
-@media screen and (min-width: 1152px) {
+@media screen and (min-width: 1600px) {
   .mvyv p {
     font-size: 1.5em;
     margin-block-start: 1em;
@@ -409,7 +409,7 @@ body.slider__body {
 
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1440px) {
   .mvyv p {
     font-size: .975em;
     margin-block-start: .65em;
@@ -471,7 +471,7 @@ body.slider__body {
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
 
   .mvyv p {
     font-size: .675em;

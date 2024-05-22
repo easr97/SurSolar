@@ -239,7 +239,7 @@ body {
 	color: yellow;
 }
 
-@media screen and (min-width: 1152px) {
+@media screen and (min-width: 1600px) {
 	.login {
 		font-size: 1.5em;
 	}
@@ -281,7 +281,7 @@ body {
 
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1440px) {
 	.login {
 		font-size: .975em;
 	}
@@ -323,7 +323,7 @@ body {
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
 	.login {
 		font-size: .675em;
 	}
