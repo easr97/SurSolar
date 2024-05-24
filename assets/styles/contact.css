@@ -3,23 +3,69 @@
 #contacto .form-cont {
   display: inline-flex;
   position: absolute;
+  font-family: Helvetica, Arial, sans-serif;
   z-index: 3;
   height: 85%;
   width: 85%;
   align-items: center;
   justify-content: center;
   margin: 5%;
+  background: transparent;
 }
 
-#contacto .form-cont .libre {
-  display: flexbox;
+.consul {
+  display: flex;
+  flex-direction: column;
   height: 100%;
   width: 50%;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: 500;
 }
 
-#contacto .form-cont .libre>form .radios {
+.consul h2 {
+  text-align: center;
+  color: black;
+}
+
+.consulta {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
+
+.consulta h2 {
+  text-align: center;
+  color: black;
+}
+
+.consulta form {
+  margin-top: 10%;
+  text-align: center;
+  width: 100%;
+  color: black;
+}
+
+.consulta form .input-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.consulta .input-box .input-field {
+  width: 48.55%;
+}
+
+.consulta .field .item {
+  width: 60%;
+  background-color: transparent;
+  outline: none;
+  color: black;
+}
+
+.consulta form .radios {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -30,7 +76,7 @@
   transition: all 0.3s;
 }
 
-#contacto .form-cont .libre>form .areas {
+.consulta form .areas {
   color: black;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: 500;
@@ -38,45 +84,76 @@
   transition: all 0.3s;
 }
 
-#contacto .form-cont .forma {
-  display: flexbox;
+.consul [type="button"] {
+  background: #CC6666;
+  border: none;
+  outline: none;
+  color: black;
+  cursor: pointer;
+  transition: .5s;
+}
+
+/* De aqui para abajo contacto */
+.contacto {
+  display: flex;
+  flex-direction: column;
   height: 100%;
   width: 50%;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: 500;
+}
+
+.contacto h2 {
   text-align: center;
   color: black;
 }
 
-#contacto .form-cont .forma form {
+.contacto form {
   margin-top: 10%;
+  text-align: center;
+  width: 100%;
+  color: black;
 }
 
-#contacto .form-cont .forma .input-box {
+.contacto form .input-box {
   display: flex;
-  justify-content: space-between;
-
+  justify-content: center;
 }
 
-#contacto .form-cont .forma .input-box .input-field{
+.contacto .input-box .input-field {
   width: 48.55%;
 }
 
-.field .item {
-  width: 100%;
-  background: transparent;
+.contacto .field .item {
+  width: 70%;
+  background-color: transparent;
   outline: none;
+  color: black;
 }
 
-.field .item::placeholder {
-  color: rgba(255,255,255,.3);
+.contacto .field.error-txt .item {
+  border-color: red;
 }
 
-form .textarea-field .item{
+.contacto .field .item::placeholder {
+  color: rgba(0, 0, 0, .3);
+}
+
+.contacto .field .error-txt {
+  color: red;
+  text-align: left;
+  display: none;
+}
+
+.contacto .field.error .error-txt {
+  display: block;
+}
+
+.contacto form .textarea-field .item {
   resize: none;
 }
 
-#contacto .form-cont .libre .feedback-input {
+.consulta .feedback-input {
   border: solid #CC6666;
   color: black;
 }
@@ -92,43 +169,66 @@ form .textarea-field .item{
   outline: 0;
 }
 
-textarea {
-  resize: vertical;
-}
-
-[type="submit"] {
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  width: 100%;
+.contacto form [type="submit"] {
   background: #CC6666;
-  border: 0;
+  border: none;
+  outline: none;
+  color: black;
   cursor: pointer;
-  color: white;
-  transition: all 0.3s;
-  font-weight: 700;
+  transition: .5s;
 }
 
-[type="submit"]:hover {
-  background: #CC4949;
+.consulta form [type="submit"] {
+  background: #CC6666;
+  border: none;
+  outline: none;
+  color: black;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.consul a:link, .consul a:visited {
+  background: #CC6666;
+  border: none;
+  outline: none;
+  color: black;
+  cursor: pointer;
+  transition: .5s;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.contacto form [type="submit"]:hover {
+  box-shadow: none;
+}
+
+.consulta form [type="submit"]:hover {
+  box-shadow: none;
+}
+
+.consul a:hover {
+  box-shadow: none;
 }
 
 @media screen and (min-width: 1600px) {
-  form {
-    max-width: 26.25em;
-    margin: 3.125em auto;
-  }
-
-  #contacto .form-cont .libre {
+  .consul [type="button"] {
     font-size: 1.125em;
   }
 
-  #contacto .form-cont .libre>form .radios {
+  .consulta {
+    font-size: 1.125em;
+  }
+
+  .consulta form .radios {
     font-size: 1.125em;
     border-radius: 5px;
     line-height: 0.625em;
     border: .125em solid #CC6666;
   }
 
-  #contacto .form-cont .libre>form .areas {
+  .consulta form .areas {
     font-size: 1.125em;
     padding: 0.625em;
     border-radius: 5px;
@@ -136,8 +236,19 @@ textarea {
     border: .125em solid #CC6666;
   }
 
-  #contacto .form-cont .forma {
-    font-size: 1.125em;
+  .consul h2 {
+    font-size: 2.5rem;
+    margin-bottom: .625em;
+  }
+
+  .contacto h2 {
+    font-size: 2.5rem;
+    margin-bottom: .625em;
+  }
+
+  .consulta h2 {
+    font-size: 2.5rem;
+    margin-bottom: .625em;
   }
 
   .feedback-input {
@@ -149,7 +260,7 @@ textarea {
     margin-bottom: .9375em;
   }
 
-  .field .item {
+  .contacto .field .item {
     padding: 1.125em;
     border: .125em solid #CC6666;
     border-radius: .375em;
@@ -157,22 +268,53 @@ textarea {
     margin: .75em 0;
   }
 
+  .field .error-txt {
+    font-size: .90625em;
+    margin: -.3125 0 .0625;
+  }
+
   .feedback-input:focus {
     border: .125em solid #CC4949;
   }
 
-  textarea {
-    height: 2.4em;
-    line-height: 150%;
+  form .textarea-field .error-txt {
+    margin-top: -.625em;
   }
 
-  [type="submit"] {
-    border-radius: .3125em;
-    font-size: 1.5em;
-    padding-top: .625em;
-    padding-bottom: .625em;
-    margin-top: -.25em;
+  form .textarea-field .error-txt {
+    margin-top: -.40625em;
   }
+
+  .contacto form [type="submit"] {
+    padding: .75em 2em;
+    border-radius: .375em;
+    box-shadow: 0 0 .625em #CC4949;
+    font-size: 1em;
+    letter-spacing: .0625em;
+    font-weight: 600;
+    margin-top: 1.25em;
+  }
+
+  .consulta form [type="submit"] {
+    padding: .75em 2em;
+    border-radius: .375em;
+    box-shadow: 0 0 .625em #CC4949;
+    font-size: 1em;
+    letter-spacing: .0625em;
+    font-weight: 600;
+    margin-top: 1.25em;
+  }
+
+  .consul a:link {
+    padding: .75em 2em;
+    border-radius: .375em;
+    box-shadow: 0 0 .625em #CC4949;
+    font-size: 1em;
+    letter-spacing: .0625em;
+    font-weight: 600;
+    margin-top: 5em;
+  }
+
 }
 
 @media screen and (max-width: 1440px) {
@@ -181,18 +323,18 @@ textarea {
     margin: 2.03125em auto;
   }
 
-  #contacto .form-cont .libre {
+  .consulta {
     font-size: .73125em;
   }
 
-  #contacto .form-cont .libre>form .radios {
+  .consulta form .radios {
     font-size: .73125em;
     border-radius: 0.203125em;
     border: .08125em solid #CC6666;
     line-height: 0.40625em;
   }
 
-  #contacto .form-cont .libre>form .areas {
+  .consulta form .areas {
     font-size: .73125em;
     border-radius: .203125em;
     border: .08125em solid #CC6666;
@@ -200,8 +342,9 @@ textarea {
     padding: 0.40625em;
   }
 
-  #contacto .form-cont .forma {
-    font-size: .73125em;
+  .contacto h2 {
+    font-size: 1.625em;
+    margin-bottom: .40625em;
   }
 
   .feedback-input {
@@ -213,7 +356,7 @@ textarea {
     margin-bottom: .609375em;
   }
 
-  .field .item {
+  .contacto .field .item {
     padding: .73125em;
     border: .08125 solid #CC6666;
     border-radius: .24375em;
@@ -221,17 +364,43 @@ textarea {
     margin: .4875em 0;
   }
 
-  textarea {
-    height: 1.56em;
-    line-height: 97.5%;
+  .field .error-txt {
+    font-size: .5890625em;
+    margin: -.203125 0 .400625;
   }
 
-  [type="submit"] {
-    border-radius: .203125em;
-    font-size: .975em;
-    padding-top: .40625em;
-    padding-bottom: .40625em;
-    margin-top: -.1625em;
+  form .textarea-field .error-txt {
+    margin-top: -.28125em;
+  }
+
+  .contacto form [type="submit"] {
+    padding: .875em 1.3em;
+    border-radius: .24375em;
+    box-shadow: 0 0 .40625em #CC4949;
+    font-size: .65em;
+    letter-spacing: .040625em;
+    font-weight: 400;
+    margin-top: .8125em;
+  }
+
+  .consulta form [type="submit"] {
+    padding: .875em 1.3em;
+    border-radius: .24375em;
+    box-shadow: 0 0 .40625em #CC4949;
+    font-size: .65em;
+    letter-spacing: .040625em;
+    font-weight: 400;
+    margin-top: .8125em;
+  }
+
+  .consul a:link {
+    padding: .875em 1.3em;
+    border-radius: .24375em;
+    box-shadow: 0 0 .40625em #CC4949;
+    font-size: .65em;
+    letter-spacing: .040625em;
+    font-weight: 400;
+    margin-top: 3.25em;
   }
 }
 
@@ -241,18 +410,18 @@ textarea {
     margin: 1.40625em auto;
   }
 
-  #contacto .form-cont .libre {
+  .consulta {
     font-size: .50625em;
   }
 
-  #contacto .form-cont .libre>form .radios {
+  .consulta form .radios {
     font-size: .675em;
     border-radius: 0.140625em;
     line-height: 0.28125em;
     border: .05625em solid #CC6666;
   }
 
-  #contacto .form-cont .libre>form .areas {
+  .consulta form .areas {
     font-size: .675em;
     border-radius: 0.140625em;
     ;
@@ -261,8 +430,9 @@ textarea {
     padding: 0.28125em;
   }
 
-  #contacto .form-cont .forma {
-    font-size: .50625em;
+  .contacto h2 {
+    font-size: 1.125em;
+    margin-bottom: .2825em;
   }
 
   .feedback-input {
@@ -275,7 +445,7 @@ textarea {
   }
 
 
-  .field .item {
+  .contacto .field .item {
     padding: .50625em;
     border: .05625 solid #CC6666;
     border-radius: .16875em;
@@ -283,20 +453,43 @@ textarea {
     margin: .2025em 0;
   }
 
+  .field .error-txt {
+    font-size: .4078125em;
+    margin: -.140625 0 .277356;
+  }
+
   .feedback-input:focus {
     border: .05625em solid #CC4949;
   }
 
-  textarea {
-    height: 1.08em;
-    line-height: 67.5%;
+  .contacto form [type="submit"] {
+    padding: .3375em .9em;
+    border-radius: .16875em;
+    box-shadow: 0 0 .28125em #CC4949;
+    font-size: .45em;
+    letter-spacing: .28125em;
+    font-weight: 300;
+    margin-top: .5625em;
   }
 
-  [type="submit"] {
-    border-radius: .140625em;
-    font-size: .675em;
-    padding-top: .28125em;
-    padding-bottom: .28125em;
-    margin-top: -.1125em;
+  .consulta form [type="submit"] {
+    padding: .3375em .9em;
+    border-radius: .16875em;
+    box-shadow: 0 0 .28125em #CC4949;
+    font-size: .45em;
+    letter-spacing: .28125em;
+    font-weight: 300;
+    margin-top: .5625em;
   }
+
+  .consul a:link {
+    padding: .3375em .9em;
+    border-radius: .16875em;
+    box-shadow: 0 0 .28125em #CC4949;
+    font-size: .45em;
+    letter-spacing: .28125em;
+    font-weight: 300;
+    margin-top: 2.25em;
+  }
+
 }
