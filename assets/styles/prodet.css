@@ -183,8 +183,6 @@ div .leftnav-wrapper .inCom p {
   justify-content: center;
   align-items: center;
   text-align: justify;
-  padding-left: .125em;
-  padding-right: .125em;
 }
 
 .back h3 {
@@ -280,9 +278,13 @@ div .leftnav-wrapper .inCom p {
     right: 3.5 vw;
   }
 
-  .leftnav-wrapper {
+  .leftnav-wrapper .lnCom {
     font-size: 1.2em;
-    line-height: 2em;
+    line-height: 1.2em;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
   }
 
   .leftnav-wrapper h2 {
@@ -305,6 +307,15 @@ div .leftnav-wrapper .inCom p {
   .back p,
   .back .cont {
     font-size: 1.5em;
+  }
+
+  .back p {
+    margin-left: 2%;
+    margin-right: 2%;
+
+    padding-left: 2%;
+    padding-right: 2%;
+
   }
 
   .copyright {
@@ -339,9 +350,13 @@ div .leftnav-wrapper .inCom p {
     right: 2.275vw;
   }
 
-  .leftnav-wrapper {
+  .leftnav-wrapper .lnCom {
     font-size: .78em;
-    line-height: 1.3em;
+    line-height: .78em;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
   }
 
   .leftnav-wrapper h2 {
@@ -365,10 +380,21 @@ div .leftnav-wrapper .inCom p {
     font-size: 1.17em;
   }
 
+
   .back p,
   .back .cont {
     font-size: .975em;
   }
+
+  .back p {
+    margin-left: 2%;
+    margin-right: 2%;
+
+    padding-left: 2%;
+    padding-right: 2%;
+
+  }
+
 
   .copyright {
     font-size: 0.65em;
@@ -402,9 +428,14 @@ div .leftnav-wrapper .inCom p {
     right: 1.575vw;
   }
 
-  .leftnav-wrapper {
+  .leftnav-wrapper .lnCom {
     font-size: .54em;
-    line-height: .9em;
+    line-height: .54em;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+
   }
 
   .leftnav-wrapper h2 {
@@ -428,6 +459,17 @@ div .leftnav-wrapper .inCom p {
   .back .cont {
     font-size: .675em;
   }
+
+  .back p {
+    margin-left: 2%;
+    margin-right: 2%;
+
+    padding-left: 2%;
+    padding-right: 2%;
+
+  }
+
+
 
   .copyright {
     font-size: 0.45em;
