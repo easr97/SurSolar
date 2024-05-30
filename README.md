@@ -12,6 +12,7 @@ Coformación a los Criterios de Evaluación del TPO:
 
 2.- El formulario de contacto está dividido en dos secciones, una de "contáctenos" en la Sección de Contacto de la pagina ppal y uno de Presupuestos, en una página aparte, al que se accede por enlace en la página de contactos. Originalemete estaban ambos en la misma sección pero, ocasionaban demasiados conflictos entre ellos, por lo que se decidió separarlos, por razones de tiempo. Aún lo estoy terminando, por esa razón.
 La sección que está alojada en la pág. ppal, cumple con todo lo exigido en relación con JS. La que está en la forma de solicitud de presupuesto, se tuvo que rehacer, para efectos prácticos; cumple con el requisito de los radios y el select pero, aún no funciona con el servidor de correo. Estamos en eso.
+29/5 Corregida la forma de consultas, ya está funcional.
 
 3.- Todas las páginas son responsivas para efectos de imágenes y diseño, con puntos de corte en min(1600), max(1440) y max(768), para textos.
 
