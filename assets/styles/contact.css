@@ -27,63 +27,6 @@
   color: black;
 }
 
-.consulta {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 50%;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: 500;
-}
-
-.consulta h2 {
-  text-align: center;
-  color: black;
-}
-
-.consulta form {
-  margin-top: 10%;
-  text-align: center;
-  width: 100%;
-  color: black;
-}
-
-.consulta form .input-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.consulta .input-box .input-field {
-  width: 48.55%;
-}
-
-.consulta .field .item {
-  width: 60%;
-  background-color: transparent;
-  outline: none;
-  color: black;
-}
-
-.consulta form .radios {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  color: black;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  background-color: transparent;
-  transition: all 0.3s;
-}
-
-.consulta form .areas {
-  color: black;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  background-color: transparent;
-  transition: all 0.3s;
-}
-
 .consul [type="button"] {
   background: #CC6666;
   border: none;
@@ -141,7 +84,7 @@
 
 .contacto .field .error-txt {
   color: red;
-  text-align: left;
+  text-align: center;
   display: none;
 }
 
@@ -152,12 +95,6 @@
 .contacto form .textarea-field .item {
   resize: none;
 }
-
-.consulta .feedback-input {
-  border: solid #CC6666;
-  color: black;
-}
-
 
 .feedback-input {
   font-family: Helvetica, Arial, sans-serif;
@@ -170,15 +107,6 @@
 }
 
 .contacto form [type="submit"] {
-  background: #CC6666;
-  border: none;
-  outline: none;
-  color: black;
-  cursor: pointer;
-  transition: .5s;
-}
-
-.consulta form [type="submit"] {
   background: #CC6666;
   border: none;
   outline: none;
@@ -204,10 +132,6 @@
   box-shadow: none;
 }
 
-.consulta form [type="submit"]:hover {
-  box-shadow: none;
-}
-
 .consul a:hover {
   box-shadow: none;
 }
@@ -217,36 +141,12 @@
     font-size: 1.125em;
   }
 
-  .consulta {
-    font-size: 1.125em;
-  }
-
-  .consulta form .radios {
-    font-size: 1.125em;
-    border-radius: 5px;
-    line-height: 0.625em;
-    border: .125em solid #CC6666;
-  }
-
-  .consulta form .areas {
-    font-size: 1.125em;
-    padding: 0.625em;
-    border-radius: 5px;
-    line-height: 22px;
-    border: .125em solid #CC6666;
-  }
-
   .consul h2 {
     font-size: 2.5rem;
     margin-bottom: .625em;
   }
 
   .contacto h2 {
-    font-size: 2.5rem;
-    margin-bottom: .625em;
-  }
-
-  .consulta h2 {
     font-size: 2.5rem;
     margin-bottom: .625em;
   }
@@ -295,16 +195,6 @@
     margin-top: 1.25em;
   }
 
-  .consulta form [type="submit"] {
-    padding: .75em 2em;
-    border-radius: .375em;
-    box-shadow: 0 0 .625em #CC4949;
-    font-size: 1em;
-    letter-spacing: .0625em;
-    font-weight: 600;
-    margin-top: 1.25em;
-  }
-
   .consul a:link {
     padding: .75em 2em;
     border-radius: .375em;
@@ -321,25 +211,6 @@
   form {
     max-width: 17.0625em;
     margin: 2.03125em auto;
-  }
-
-  .consulta {
-    font-size: .73125em;
-  }
-
-  .consulta form .radios {
-    font-size: .73125em;
-    border-radius: 0.203125em;
-    border: .08125em solid #CC6666;
-    line-height: 0.40625em;
-  }
-
-  .consulta form .areas {
-    font-size: .73125em;
-    border-radius: .203125em;
-    border: .08125em solid #CC6666;
-    line-height: 1.375em;
-    padding: 0.40625em;
   }
 
   .contacto h2 {
@@ -383,16 +254,6 @@
     margin-top: .8125em;
   }
 
-  .consulta form [type="submit"] {
-    padding: .875em 1.3em;
-    border-radius: .24375em;
-    box-shadow: 0 0 .40625em #CC4949;
-    font-size: .65em;
-    letter-spacing: .040625em;
-    font-weight: 400;
-    margin-top: .8125em;
-  }
-
   .consul a:link {
     padding: .875em 1.3em;
     border-radius: .24375em;
@@ -408,31 +269,6 @@
   form {
     max-width: 11.8125em;
     margin: 1.40625em auto;
-  }
-
-  .consulta {
-    font-size: .50625em;
-  }
-
-  .consulta form .radios {
-    font-size: .675em;
-    border-radius: 0.140625em;
-    line-height: 0.28125em;
-    border: .05625em solid #CC6666;
-  }
-
-  .consulta form .areas {
-    font-size: .675em;
-    border-radius: 0.140625em;
-    ;
-    line-height: .61875em;
-    border: .05625em solid #CC6666;
-    padding: 0.28125em;
-  }
-
-  .contacto h2 {
-    font-size: 1.125em;
-    margin-bottom: .2825em;
   }
 
   .feedback-input {
@@ -463,16 +299,6 @@
   }
 
   .contacto form [type="submit"] {
-    padding: .3375em .9em;
-    border-radius: .16875em;
-    box-shadow: 0 0 .28125em #CC4949;
-    font-size: .45em;
-    letter-spacing: .28125em;
-    font-weight: 300;
-    margin-top: .5625em;
-  }
-
-  .consulta form [type="submit"] {
     padding: .3375em .9em;
     border-radius: .16875em;
     box-shadow: 0 0 .28125em #CC4949;

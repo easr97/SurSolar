@@ -18,11 +18,12 @@ function sendEmail() {
     SecureToken: "60844d32-aac7-4013-a4c7-f93ab7a4fefa",
     To: "easr01@gmail.com",
     From: "easr01@gmail.com",
-    Subject: subject.value,
+    Subject: subject,
     Body: bodymessage
   }).then(
     message => {
       if (message == "OK") {
+        
         Swal.fire({
           title: "Exito!",
           text: "Mensaje Enviado!",
@@ -37,10 +38,11 @@ function checkInputs() {
   const items = document.querySelectorAll(".item");
   /* console.log("Items: ", items); */
   for (const item of items) {
-    if (item.value == "") {
+    if (item.value.trim() == "") {
       item.classList.add("error");
       item.parentElement.classList.add("error");
     }
+    console.log("Items: ", items);
 
     if (items[1].value != "") {
       checkEmail();
@@ -69,7 +71,7 @@ function checkEmail() {
   if (!email.value.match(emailRegex)) {
     email.classList.add("error");
     email.parentElement.classList.add("error");
-    /*     console.log("Lo que va: ", email.value); */
+        console.log("Lo que va: ", email);
     if (email.value != "") {
       errorTxtEmail.innerText = "Ingrese una dirección de correo válida";
     } else {

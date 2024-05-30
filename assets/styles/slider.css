@@ -292,6 +292,7 @@ body.slider__body {
   height: 33.333%;
   justify-content: center;
   align-items: center;
+  padding-top: 10%;
 }
 
 .carteles iframe {

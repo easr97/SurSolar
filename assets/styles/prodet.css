@@ -113,14 +113,6 @@ div .leftnav-wrapper .inCom p {
   background-color: burlywood;
 }
 
-.forcon {
-  grid-area: 2 / 3 / 10 / 10;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background-image: url("./../Images/Carousel/asesor.webp");
-}
-
 .grid-container-III {
   display: flex;
   height: 100%;
@@ -395,7 +387,6 @@ div .leftnav-wrapper .inCom p {
 
   }
 
-
   .copyright {
     font-size: 0.65em;
   }
@@ -468,8 +459,6 @@ div .leftnav-wrapper .inCom p {
     padding-right: 2%;
 
   }
-
-
 
   .copyright {
     font-size: 0.45em;

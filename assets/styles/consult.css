@@ -1,0 +1,472 @@
+.consult-body {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.form-contact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-height: 100%;
+}
+
+.prediap {
+  display: flex;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.prediap img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.forcon {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  font-family: Helvetica, Arial, sans-serif;
+  z-index: 3;
+  height: 90%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.consulta {
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+  width: 50%;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
+
+.consulta h2 {
+  text-align: center;
+  color: greenyellow;
+  margin-top: 5%;
+}
+
+.consulta h3 {
+  text-align: center;
+  color: #adff2f;
+}
+
+.consulta form {
+  /* margin-top: 10%; */
+  text-align: center;
+  width: 100%;
+}
+
+.consulta form .input-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.consulta form .input-field {
+  margin: 1%;
+}
+
+.consulta .field.error-txt .item {
+  border-color: red;
+}
+
+.rojo {
+  color: red;
+}
+
+
+.txt-radio.rojo{
+  color: red;
+  display: block;
+}
+
+.txt-radio {
+  text-align: center;
+  display: none;
+}
+
+.txt-rubro.rojo {
+  color: red;
+  display: block;
+}
+
+.txt-rubro {
+  text-align: center;
+  display: none;
+}
+
+.consulta .field .error-txt {
+  color: red;
+  text-align: center;
+  display: none;
+}
+
+.consulta .field.error .error-txt {
+  display: block;
+}
+
+.consulta .field .item {
+  background-color: #fff;
+  outline: 0;
+  color: #000;
+}
+
+.consulta form .radios-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.consulta form .radios {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  color: #fff;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  background-color: transparent;
+  transition: all .3s;
+  width: 100%;
+}
+
+.consulta form .areas {
+  color: #fff;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  background-color: transparent;
+  transition: all .3s;
+}
+
+[type=submit] {
+  background: #c66;
+  border: none;
+  outline: 0;
+  color: #000;
+  cursor: pointer;
+  box-shadow: 0 0 .625em #cc4949;
+  transition: .5s;
+  position: absolute;
+  bottom: 3%;
+}
+
+.consulta form [type=submit]:hover {
+  box-shadow: none;
+}
+
+.footer {
+  display: flex;
+  height: 10%;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+}
+
+.footer-nav-container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  background-color: #073bb3;
+  bottom: 0;
+}
+
+.copyright {
+  width: 30%;
+  font-weight: 700;
+  text-align: center;
+  color: #ff0;
+  float: left;
+  margin: auto;
+}
+
+.footer-nav {
+  width: 70%;
+  margin: auto;
+}
+
+.footer-navlinks {
+  color: #fff;
+}
+
+.footer-navlinks>li {
+  display: inline;
+  padding-right: 2.8125em;
+  max-width: 7.5em;
+  float: right;
+  line-height: 1em;
+}
+
+.footer-navlinks li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-navlinks a:hover {
+  text-decoration: underline;
+  color: #ff0;
+}
+
+@media screen and (min-width:1600px) {
+  .consulta {
+    /* font-size: 1.125em */
+  }
+
+  .consulta h2 {
+    font-size: 2.5rem;
+  }
+
+  .consulta h3 {
+    font-size: 1.625rem;
+    margin-bottom: .625em;
+  }
+
+  .consulta form .radios {
+    font-size: 1.5em;
+    border-radius: .3125em;
+    line-height: .625em;
+    border: .125em solid #c66;
+  }
+
+  .txt-radio.rojo{
+    font-size: 1.5em;
+    padding: .625em;
+    line-height: 1.375em;
+  }
+
+  .txt-rubro.rojo{
+    font-size: 1em;
+    padding: .625em;
+    line-height: 1.375em;
+  }
+
+  .consulta form .areas {
+    font-size: 1.5em;
+    padding: .625em;
+    border-radius: .3125em;
+    line-height: 1.375em;
+    border: .125em solid #c66;
+  }
+
+  .areas select {
+    font-size: 1em;
+  }
+
+  .consulta form .input-box {
+    font-size: 1.5em;
+    padding: .625em;
+    border-radius: .3125em;
+    line-height: 1.375em;
+    border: .125em solid #c66;
+  }
+
+  .consulta .field .item {
+    width: 60%;
+    font-size: 1em;
+  }
+
+  [type=submit] {
+    background: #c66;
+    padding: .75em 2em;
+    border-radius: .375em;
+    box-shadow: 0 0 .625em #cc4949;
+    font-size: 1em;
+    letter-spacing: .0625em;
+    font-weight: 600;
+  }
+
+  .copyright {
+    font-size: 1em;
+  }
+
+  .footer-navlinks li a {
+    font-size: 1.4em;
+    padding: 0 .3125em;
+  }
+}
+
+@media screen and (max-width:1440px) {
+  .consulta {
+    /* font-size: .73125em */
+  }
+
+  .consulta h2 {
+    font-size: 1.625rem;
+  }
+
+  .consulta h3 {
+    font-size: 1.05625rem;
+    margin-bottom: .40625em;
+  }
+
+  .consulta form .radios {
+    font-size: .975em;
+    border-radius: .203125em;
+    border: .08125em solid #c66;
+    line-height: .40625em;
+  }
+
+  .txt-radio.rojo{
+    font-size: .975em;
+    padding: .40625em;
+    line-height: .89375em;
+  }
+
+  .txt-rubro.rojo{
+    font-size: .65em;
+    padding: .40625em;
+    line-height: .89375em;
+  }
+
+.consulta form .areas {
+    font-size: .975em;
+    border-radius: .203125em;
+    border: .08125em solid #c66;
+    line-height: .89375em;
+    padding: .40625em;
+  }
+
+  .areas select {
+    font-size: .65em;
+  }
+
+  .consulta form .input-box {
+    font-size: .975em;
+    padding: .40625em;
+    border-radius: .203125em;
+    line-height: .89375em;
+    border: .08125em solid #c66
+  }
+
+  .consulta .field .item {
+    width: 60%;
+    font-size: .65em;
+  }
+
+  [type=submit] {
+    background: #c66;
+    padding: .4875em 1.3em;
+    border-radius: .24375em;
+    box-shadow: 0 0 .40625em #cc4949;
+    font-size: .65em;
+    letter-spacing: .040625em;
+    font-weight: 400;
+    margin-bottom: .8125em;
+
+  }
+
+  
+  .copyright {
+    font-size: .65em;
+  }
+
+  .footer-navlinks li a {
+    font-size: .91em;
+    padding: 0 .203125em;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .consulta {
+    /* font-size: .50625em; */
+    align-items: center;
+    justify-content: center;
+  }
+
+  .consulta h2 {
+    font-size: 1.125rem;
+  }
+
+  .consulta h3 {
+    font-size: .73125rem;
+    margin-bottom: .28125em;
+  }
+
+  .consulta form .radios {
+    font-size: .675em;
+    border-radius: .140625em;
+    line-height: .28125em;
+    border: .05625em solid #c66;
+  }
+
+  .txt-radio.rojo{
+    font-size: .675em;
+    padding: .28125em;
+    line-height: .61875em;
+  }
+
+  .txt-rubro.rojo{
+    font-size: .45em;
+    padding: .28125em;
+    line-height: .61875em;
+  }
+
+  .consulta form .areas {
+    font-size: .675em;
+    border-radius: .140625em;
+    line-height: .61875em;
+    border: .05625em solid #c66;
+    padding: .28125em;
+  }
+
+  .areas select {
+    font-size: .45em;
+  }
+
+  .consulta form .input-box {
+    font-size: .675em;
+    padding: .28125em;
+    border-radius: .140625em;
+    line-height: .61875em;
+    border: .05625em solid #c66;
+  }
+
+  .consulta .field .item {
+    width: 60%;
+    font-size: .45em;
+  }
+
+  [type=submit] {
+    background: #c66;
+    padding: .3375em 09em;
+    border-radius: .16875em;
+    box-shadow: 0 0 .28125em #cc4949;
+    font-size: .45em;
+    letter-spacing: .028125em;
+    font-weight: 300;
+    margin-bottom: .5625em;
+
+  }
+
+  
+  .copyright {
+    font-size: .45em;
+  }
+
+  .footer-navlinks li a {
+    font-size: .63em;
+    padding: 0 .140625em;
+  }
+}

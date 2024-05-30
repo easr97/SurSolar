@@ -1,9 +1,12 @@
-const form = document.querySelector('form');
-const nombre = document.getElementById("nombre");
-const email = document.getElementById("email");
-const phone = document.getElementById("phone");
-const subject = document.getElementById("subject");
-const message = document.getElementById("message");
+let form = document.querySelector('form');
+let nombre = document.getElementById("nombre");
+let email = document.getElementById("email");
+let phone = document.getElementById("phone");
+let message = document.getElementById("message");
+let ventas = document.getElementById('ventas');
+let servic = document.getElementById('servic');
+let rubro = document.getElementById("rubro");
+let subject = "Consulta por ";
 
 /* 
     Host: "smtp.elasticemail.com",
@@ -13,16 +16,18 @@ const message = document.getElementById("message");
 */
 
 function sendEmail() {
-  const bodymessage = 'Nombre: $(nombre.value)<br>Correoe: $(email.value)<br>Telefono: $(phone.value)<br>Asunto: $(subject.value)<br>Mensaje: $(message.value)';
+  const bodymessage = 'Nombre: $(nombre.value)<br>Correoe: $(email.value)<br>Telefono: $(phone.value)<br>Asunto: '+ subject +'<br>Rubro: $(rubro.value)';
   Email.send({
     SecureToken: "60844d32-aac7-4013-a4c7-f93ab7a4fefa",
     To: "easr01@gmail.com",
     From: "easr01@gmail.com",
-    Subject: subject.value,
+    Subject: subject,
     Body: bodymessage
   }).then(
     message => {
-      if (message == "OK") {
+      console.log(message);
+      if (message != "Ok") {
+        
         Swal.fire({
           title: "Exito!",
           text: "Mensaje Enviado!",
@@ -33,11 +38,37 @@ function sendEmail() {
   );
 }
 
+function checkRadio() {
+  // checking if any radio button is selected
+  if (ventas.checked) {
+    subject = subject + ventas.value;
+  }
+  if (servic.checked) {
+    subject = subject + servic.value;
+  }
+  let list = document.getElementById("txt-radio").classList;
+  if (servic.checked || ventas.checked) {
+    list.remove("rojo");
+  } else {
+    list.add("rojo");
+  }
+}
+
+function checkRubro() {
+  // checking if any radio button is selected
+  let list = document.getElementById("txt-rubro").classList;
+  if (rubro.value.trim() == "") {
+    list.add("rojo");
+  } else {
+    list.remove("rojo");
+  }
+}
+
 function checkInputs() {
-  const items = document.querySelectorAll(".item");
+  let items = document.querySelectorAll(".item");
   /* console.log("Items: ", items); */
-  for (const item of items) {
-    if (item.value == "") {
+  for (let item of items) {
+    if (item.value.trim() == "") {
       item.classList.add("error");
       item.parentElement.classList.add("error");
     }
@@ -63,8 +94,8 @@ function checkInputs() {
 }
 
 function checkEmail() {
-  const emailRegex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  const errorTxtEmail = document.querySelector(".error-txt.email");
+  let emailRegex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  let errorTxtEmail = document.querySelector(".error-txt.email");
   /*   console.log("errorTxtEmail: ", errorTxtEmail); */
   if (!email.value.match(emailRegex)) {
     email.classList.add("error");
@@ -83,10 +114,15 @@ function checkEmail() {
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
+  checkRadio();
+  checkRubro();
   checkInputs();
 
-  if (!nombre.classList.contains("error") && !email.classList.contains("error") && !phone.classList.contains("error") && !subject.classList.contains("error") && !message.classList.contains("error")) {
-    /* console.log("Ok"); */
+  console.log("Radio ",document.getElementById("txt-radio").classList);
+  console.log("Rubro ",document.getElementById("txt-rubro").classList);
+
+  if (!document.getElementById("txt-radio").classList.contains("rojo") && !document.getElementById("txt-rubro").classList.contains("rojo")  && !nombre.classList.contains("error") && !email.classList.contains("error") && !phone.classList.contains("error")) {
+    console.log("Ok"); 
     sendEmail();
   }
 })
