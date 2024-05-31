@@ -35,3 +35,22 @@ La sección que está alojada en la pág. ppal, cumple con todo lo exigido en re
 Solo se usa bootstrap, a partir del nivel de sub-páginas hasta el detalle de producto y/o servicio -cuando se desarrolle-. La página de entrada es solo HTML, CSS y JS.
 
 Se pretendía alcanzar a la Voyager II pero, Júpiter tendrá que ser bueno, por el momento.
+
+------------------------------------------------------
+
+Comentario de las modificaciones sugeridas:
+
+2- Falta un input de img
+	Por favor indíquemelo,que no lo encuentro.
+
+3- No se aprecia diseño responsive (la página se rompe en otras medidas)
+	No entiendo, mis disculpas, si pudiera ser un poquito más específico; la página se adapta y no pierde funcionalidad con los cambios de formato, hasta donde yo lo veo.
+ 
+4- No se encuentra animación alguna o item que corresponda a este punto.
+	Quizás mi error, al no decirle específicamente:
+	Sección de contacto, botones de acción, la consuta cambia de brillo y el contacto, oculta las sombras cuando se hace hover.
+	Página de detalles de producto: Home > Productos > Paneles Solares > Paneles Solares (FV / TD / PH), las tarjetas de los productos están animadas
+
+6- El sitio carece de estilo CSS alguno, eso repercute en muchos de los puntos del TPO, punto 10 inclusive.
+	Ese punto lo había obviado porque era responsabilidad de la muchacha del equipo, quien desertó. Si entiendo bien el asunto de los estilos, como adaptar la paleta de colores, se adpató a: https://docs.google.com/spreadsheets/d/1G6Puuyg8A-szenzi7aBWQxCuvLxUiJWkMPNMR_7LXls/edit#gid=595672561 -->  28. Rojo, amarillo, azul y cian, Los códigos hexadecimales corresponden al rojo (#e31e24), amarillo (#ffed00), azul (#393185) y cian (#00a0e3). Su unión es ideal para mostrar contraste entre valores. 
+    Por lo demás, todo el sitio funciona sobre CSS externos.

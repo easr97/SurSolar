@@ -88,16 +88,16 @@
 }
 
 .consulta .field.error-txt .item {
-  border-color: red;
+  border-color: #e31e24;
 }
 
 .rojo {
-  color: red;
+  color: #e31e24;
 }
 
 
 .txt-radio.rojo{
-  color: red;
+  color: #e31e24;
   display: block;
 }
 
@@ -107,7 +107,7 @@
 }
 
 .txt-rubro.rojo {
-  color: red;
+  color: #e31e24;
   display: block;
 }
 
@@ -117,7 +117,7 @@
 }
 
 .consulta .field .error-txt {
-  color: red;
+  color: #e31e24;
   text-align: center;
   display: none;
 }
@@ -161,12 +161,12 @@
 }
 
 [type=submit] {
-  background: #c66;
+  background: #CC6666;
   border: none;
   outline: 0;
   color: #000;
   cursor: pointer;
-  box-shadow: 0 0 .625em #cc4949;
+  box-shadow: 0 0 .625em #e31e24;
   transition: .5s;
   position: absolute;
   bottom: 3%;
@@ -189,7 +189,7 @@
   flex-direction: row;
   height: 100%;
   width: 100%;
-  background-color: #073bb3;
+  background-color: #00a0e3;
   bottom: 0;
 }
 
@@ -197,7 +197,7 @@
   width: 30%;
   font-weight: 700;
   text-align: center;
-  color: #ff0;
+  color: #ffed00;
   float: left;
   margin: auto;
 }
@@ -226,7 +226,7 @@
 
 .footer-navlinks a:hover {
   text-decoration: underline;
-  color: #ff0;
+  color: #ffed00;
 }
 
 @media screen and (min-width:1600px) {
@@ -291,7 +291,7 @@
     background: #c66;
     padding: .75em 2em;
     border-radius: .375em;
-    box-shadow: 0 0 .625em #cc4949;
+    box-shadow: 0 0 .625em #e31e24;
     font-size: 1em;
     letter-spacing: .0625em;
     font-weight: 600;
@@ -369,7 +369,7 @@
     background: #c66;
     padding: .4875em 1.3em;
     border-radius: .24375em;
-    box-shadow: 0 0 .40625em #cc4949;
+    box-shadow: 0 0 .40625em #e31e24;
     font-size: .65em;
     letter-spacing: .040625em;
     font-weight: 400;
@@ -452,7 +452,7 @@
     background: #c66;
     padding: .3375em 09em;
     border-radius: .16875em;
-    box-shadow: 0 0 .28125em #cc4949;
+    box-shadow: 0 0 .28125em #e31e24;
     font-size: .45em;
     letter-spacing: .028125em;
     font-weight: 300;
