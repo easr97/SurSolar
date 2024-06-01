@@ -62,9 +62,9 @@ body{
 
 .input-box i {
   position: absolute;
-  right: 1.25em;
+  right: 2.5em;
   /* top: 50%; */
-  transform: translateY(-50%);
+  transform: translateY(-200%);
   font-size: 1.25em;
 }
 
@@ -101,6 +101,7 @@ body{
   font-size: 1em;
   color: #333;
   font-weight: 600;
+
 }
 
 .wrapper .register-link{
@@ -119,6 +120,31 @@ body{
   text-decoration: underline;
 }
 
+.salir{
+  position: absolute;
+  bottom: 3%;
+  right: 3%;
+}
+
+.salir button{
+  height: 2em;
+  width: 4em;
+  background: transparent;
+  border-radius: 50%;
+}
+
+.salir button:hover{
+  background: #fff;
+}
+
+.salir button a{
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.salir button a:hover{
+  color: #e31e24;
+}
 
 
 
