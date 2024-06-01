@@ -59,3 +59,5 @@ Comentario de las modificaciones sugeridas:
 10-Utilizar iframes y/o íconos de FontAwesome y/o fuenteslocales o bien de Google Fonts.Es optativo incluir algún elemento de Bootstrap.
 	Se usan iframes en la sección "Saber mas" de la página y se usan para el mapa de Google Maps, se retiraron los iframes (están como comentario en la página index.html) de las tarjetas de LinkedIn porque, una de los integrantes ya no estaba y no conseguí su información y el otro está bastante enfermo y no me responde a las solicitudes. Las tarjetas están remplazadas por enlaces a sus páginas de LinkedIn, que utilizan íconos de FontAwesome, al igual que el enlace "Saber mas" que se usa para acceder a ella.
 	No se usaron Fuentes locales/Google porque, no se consideraron relevantes para la página.
+
+31/5 Se agregó la forma de Login, para que no faltara.
