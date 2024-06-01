@@ -19,6 +19,8 @@ body{
 }
 
 .wrapper{
+  display: flex;
+  flex-direction: column;
   width: 26.25em;
   /* background: #393185; */
   background: transparent;
@@ -51,17 +53,17 @@ body{
   border-radius: 2.5em;
   font-size: 1em;
   color: #fff;
-  padding: 1.25em 2.8125em 1.25em 1.25em;
+  /* padding: 1.25em 2.8125em 1.25em 1.25em; */
 }
 
 .input-box input::placeholder{
   color: #fff;
 }
 
-.input-box i{
+.input-box i {
   position: absolute;
   right: 1.25em;
-  top: 50%;
+  /* top: 50%; */
   transform: translateY(-50%);
   font-size: 1.25em;
 }
@@ -102,7 +104,7 @@ body{
 }
 
 .wrapper .register-link{
-  font-size: 0.90625em;
+  font-size: .90625em;
   text-align: center;
   margin: 1.5em 0 .9375em;
 }
