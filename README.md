@@ -47,10 +47,15 @@ Comentario de las modificaciones sugeridas:
 	No entiendo, mis disculpas, si pudiera ser un poquito más específico; la página se adapta y no pierde funcionalidad con los cambios de formato, hasta donde yo lo veo.
  
 4- No se encuentra animación alguna o item que corresponda a este punto.
-	Quizás mi error, al no decirle específicamente:
-	Sección de contacto, botones de acción, la consuta cambia de brillo y el contacto, oculta las sombras cuando se hace hover.
+	Toda la página de entrada es una aimación, porque los eventos de rueda y flechas se capturan en JS para generar una transición de una página a la otra. El desplazarse entre páginas por el cintillo, es otro modo de generar esas animaciones.
+	Quizás fue mi error, al no decirle eso específicamente, además:
+	Sección de contacto, botones de acción, "SOLICITAR" cambia de brillo y "ENVIAR", oculta las sombras cuando se hace hover.
 	Página de detalles de producto: Home > Productos > Paneles Solares > Paneles Solares (FV / TD / PH), las tarjetas de los productos están animadas
 
 6- El sitio carece de estilo CSS alguno, eso repercute en muchos de los puntos del TPO, punto 10 inclusive.
 	Ese punto lo había obviado porque era responsabilidad de la muchacha del equipo, quien desertó. Si entiendo bien el asunto de los estilos, como adaptar la paleta de colores, se adpató a: https://docs.google.com/spreadsheets/d/1G6Puuyg8A-szenzi7aBWQxCuvLxUiJWkMPNMR_7LXls/edit#gid=595672561 -->  28. Rojo, amarillo, azul y cian, Los códigos hexadecimales corresponden al rojo (#e31e24), amarillo (#ffed00), azul (#393185) y cian (#00a0e3). Su unión es ideal para mostrar contraste entre valores. 
-    Por lo demás, todo el sitio funciona sobre CSS externos.
+  Por lo demás, todo el sitio funciona sobre CSS externos.
+
+10-Utilizar iframes y/o íconos de FontAwesome y/o fuenteslocales o bien de Google Fonts.Es optativo incluir algún elemento de Bootstrap.
+	Se usan iframes en la sección "Saber mas" de la página y se usan para el mapa de Google Maps, se retiraron los iframes (están como comentario en la página index.html) de las tarjetas de LinkedIn porque, una de los integrantes ya no estaba y no conseguí su información y el otro está bastante enfermo y no me responde a las solicitudes. Las tarjetas están remplazadas por enlaces a sus páginas de LinkedIn, que utilizan íconos de FontAwesome, al igual que el enlace "Saber mas" que se usa para acceder a ella.
+	No se usaron Fuentes locales/Google porque, no se consideraron relevantes para la página.
